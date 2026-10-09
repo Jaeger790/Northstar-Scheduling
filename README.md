@@ -17,7 +17,7 @@ A redesigned, local-first **JavaFX desktop scheduling application**, refactored 
 
 ## Run
 
-Install **JDK 21** and **Maven 3.9+**, extract this repository, and open a terminal in the `NorthstarScheduler` directory (the folder containing `pom.xml`). On Manjaro Linux:
+Install **JDK 21** and **Maven 3.9+**, extract this repository, and open a terminal in the `NorthstarScheduler` directory (the folder containing `pom.xml`). On Arch Linux:
 
 ```bash
 sudo pacman -Syu jdk21-openjdk maven
