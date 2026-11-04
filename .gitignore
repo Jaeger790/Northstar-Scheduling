@@ -1,0 +1,10 @@
+target/
+out/
+.idea/
+*.iml
+*.log
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+.env

@@ -18,7 +18,6 @@
     </properties>
 
     <dependencies>
-        <!-- Maven resolves the JavaFX native libraries appropriate for the current OS. -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
