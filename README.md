@@ -59,22 +59,5 @@ src/main/resources/com/northstar/scheduler/theme.css
 src/test/java/                  # Domain/service/repository tests
 ```
 
-See `docs/REFACTOR_REPORT.md` for the original findings and remaining upgrade recommendations.
-
-## Original data / migrations
-
-The original app used a MySQL database named `datacrumbs`. **Its original MySQL data was not in this repository**; the new SQLite database starts empty. The new schema is not a drop-in import of that database. If you find an old SQL dump, add an explicit migration script mapping legacy customers, contacts, and appointments (including IDs and timestamp/time zone semantics). Do not directly replace the SQLite database with a MySQL dump.
-
-## Portfolio / licensing
-
-This rewrite intentionally avoids committing database contents, secret credentials, and login attempts. Screenshots can be added to `docs/screenshots/` after verifying the app on a desktop. Add a license only if you're certain you own the right to publish all included code.
-
-## Optional: sample portfolio data
-
-For screenshots, you can populate **an already-initialized, empty database** with fictional appointments. Close the application and run:
-
-```bash
-python3 tools/seed_demo.py --database ~/.northstar-scheduler/schedule.db
-```
 
 On Windows, provide the matching path under `%USERPROFILE%`. The script refuses to run if customers, contacts, or appointments already exist; it never modifies the stored admin password. All names and email addresses are fictional example data.
